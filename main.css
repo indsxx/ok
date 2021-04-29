@@ -1,0 +1,164 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Estilizando os Elementos Adicionais*/
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 14px;
+    position: relative;
+    top: 73px;
+    left: 50px;
+    width: 200px;
+}
+h1
+{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-weight: 400;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 0.2px;
+    top: 55px;
+    left: 50px;
+    width: 200px;
+}
+
+.logo
+{
+    position: relative;
+    top: 40px;
+    left: 50px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #fff;
+    position: relative;
+    top: 145px;
+    left: 45px;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 8.7px 16px 8.7px 16px;
+    border-radius: 2rem;
+    transition: 0.6s;
+
+}
+
+/*Estilizando os Elementos Principais*/
+
+.principal
+{
+    display: flex;
+   align-items: center; 
+   justify-content: center;
+   position: relative;
+   top: 100px;
+}
+
+.div-1
+{
+    background-color: hsl(31, 77%, 52%);
+    width: 310px;
+    height: 400px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+
+.div-2
+{
+     background-color: #006970;
+     width: 310px;
+     height: 400px;
+}
+
+.div-3
+{
+    background-color: hsl(179, 100%, 13%);
+    width: 310px;
+    height: 400px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* Colocando Hover */
+
+.div-1 ul li a:hover
+{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(31, 77%, 52%);
+}
+
+.div-2 ul li a:hover
+{
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(184, 100%, 22%);
+}
+
+.div-3 ul li a:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(179, 100%, 13%);
+}
+
+
+/* Now make it RESPONSIVE */
+
+@media (max-width: 362px) {
+    body {
+overflow: visible;
+    }
+    
+    
+    .principal {
+      flex-direction: column;
+    }
+
+    .div-1 {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        height: 340px;
+        position: relative;
+        top: -50px;
+    }
+
+    .div-1 ul li a {
+        position: relative;
+        top: 105px;
+     }
+
+     .div-2 {
+         height: 340px;
+         position: relative;
+         top: -50px;
+     }
+     .div-2 ul li a {
+        position: relative;
+        top: 105px;
+     }
+     .div-3 {
+        height: 340px;
+        border-top-right-radius: 0; 
+        border-bottom-right-radius: 10px; 
+        border-bottom-left-radius: 10px; 
+        position: relative;
+        top: -50px;
+ 
+    }
+    .div-3 ul li a {
+        position: relative;
+        top: 105px;
+    }
+}
